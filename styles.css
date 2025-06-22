@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* === Custom theme colors === */
+.bg-dark-blue {
+  background-color: #24252b;
+}
+
+.bg-dark-blue-light {
+  background-color: #2f3138; /* Slightly lighter shade */
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.text-teal {
+  color: #0ea5e9;
+}
+
+.border-teal {
+  border-color: #0ea5e9;
+}
+
+.hover\:text-teal:hover {
+  color: #0ea5e9;
+}
+
+.hover\:bg-teal:hover {
+  background-color: #0ea5e9;
+}
+
+.hover\:text-dark-blue:hover {
+  color: #0f172a;
+}
+
+.custom-hover-bg {
+  background-color: #0ea5e9; /* solid teal for skill/experience cards */
+}
+
+.group:hover .group-hover\:opacity-100 {
+  opacity: 1;
+}
+
+.transition-opacity {
+  transition: opacity 0.3s ease;
+}
+
+.click {
+  color: #0f172a;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* === Navbar highlight and underline === */
+
+/* Full column highlight with extra width */
+.nav-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  min-width: 6rem; /* Adjust as needed for desired highlight width */
+  justify-content: center; /* center link inside */
+}
+
+
+.nav-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -0.5rem;   /* wider left */
+  right: -0.5rem;  /* wider right */
+  height: 100%;
+  background-color: rgba(14, 165, 233, 0.1);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 0;
+  border-radius: 0.25rem; /* optional rounded edges */
+}
+
+.nav-item:hover::before {
+  opacity: 1;
+}
+
+.nav-link {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  overflow: hidden;
+  padding: 0.25rem 0.5rem;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #0ea5e9;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.nav-link:hover::after {
+  transform: translateY(0);
+}
