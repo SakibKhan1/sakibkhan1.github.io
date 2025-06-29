@@ -329,14 +329,24 @@
     });
   </script>
 
-    <script>
-    window.addEventListener('load', () => {
-      if (window.location.hash) {
-        history.replaceState(null, null, ' ');
-        window.scrollTo(0, 0);
-      }
-    });
-  </script>
+<script>
+  // Immediately prevent anchor scrolling
+  if (window.location.hash) {
+    // Disable scroll temporarily
+    document.documentElement.style.scrollBehavior = 'auto';
+    window.scrollTo(0, 0);
+  }
+
+  window.addEventListener('load', () => {
+    if (window.location.hash) {
+      // Remove hash without refreshing
+      history.replaceState(null, null, ' ');
+    }
+
+    // Re-enable smooth scroll
+    document.documentElement.style.scrollBehavior = 'smooth';
+  });
+</script>
 
 
 </body>
