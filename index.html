@@ -318,12 +318,22 @@
     function closeModal() {
       document.getElementById('imageModal').classList.add('hidden');
     }
+    
 
     // Optional: allow clicking outside modal to close
     document.addEventListener('click', function (e) {
       const modal = document.getElementById('imageModal');
       if (e.target === modal) {
         closeModal();
+      }
+    });
+  </script>
+
+    <script>
+    window.addEventListener('load', () => {
+      if (window.location.hash) {
+        history.replaceState(null, null, ' ');
+        window.scrollTo(0, 0);
       }
     });
   </script>
