@@ -195,60 +195,80 @@
     <h2 class="text-5xl font-bold text-teal mb-10">Projects</h2>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-      <!-- Project 1 -->
-      <div class="bg-dark-blue-light p-6 rounded-lg shadow-lg">
-        <h3 class="text-xl font-semibold text-light-gray mb-2 text-center">NBA Reddit Sentiment Analyzer</h3>
-        <ul class="text-gray-300 text-sm list-disc pl-6 space-y-1 text-left">
-          <li>Built a Flask web application that performs sentiment analysis on Reddit posts based on user-specified keywords and subreddit input.</li>
-          <li>Integrated Reddit API (PRAW) to fetch live data and analyzed post content using custom positive/negative word dictionaries tailored for community slang.</li>
-          <li>Visualized sentiment trends through dynamically generated Matplotlib bar charts embedded into interactive HTML templates.</li>
-          <li>Designed the app to be fully customizable, allowing analysis across any subreddit by modifying parameters with minimal code changes.</li>
-        </ul>
+<!-- Project 1 -->
+<div class="bg-dark-blue-light p-6 rounded-lg shadow-lg relative min-h-[700px]">
+  <h3 class="text-xl font-semibold text-light-gray mb-2 text-center">NBA Reddit Sentiment Analyzer</h3>
+  <ul class="text-gray-300 text-sm list-disc pl-6 space-y-1 text-left">
+    <li>Built a <span class="text-yellow">Flask</span> web application that performs sentiment analysis on Reddit posts based on user-specified keywords and subreddit input.</li>
+    <li>Integrated <span class="text-yellow">Reddit API (PRAW)</span> to fetch live data and analyzed post content using custom positive/negative word dictionaries tailored for community slang.</li>
+    <li>Visualized sentiment trends through dynamically generated <span class="text-yellow">Matplotlib</span> bar charts embedded into <span class="text-yellow">interactive HTML templates</span>.</li>
+    <li>Designed the app to be fully customizable, allowing analysis across any subreddit by modifying parameters with minimal code changes.</li>
+  </ul>
 
-        <!-- Project Screenshot (Clickable Thumbnail) -->
-        <div class="mt-4 flex justify-center">
-<img src="results_page.JPG"
-     alt="NBA Sentiment Analysis Screenshot"
-     class="rounded-lg shadow-lg w-full max-w-3xl cursor-pointer transition-transform duration-200 hover:scale-105"
-     onclick="openModal()">
-        </div>
-
-      <!-- Modal -->
-      <div id="imageModal"
-          class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 hidden">
-        <div class="relative bg-dark-blue-light p-3 rounded-lg shadow-lg max-w-[70vw] max-h-[70vh] overflow-auto">
-          <button onclick="closeModal()"
-                  class="absolute top-2 right-3 text-white text-3xl font-bold hover:text-gray-300">
-            &times;
-          </button>
-          <img src="results_page.JPG"
-              alt="Full Size Screenshot"
-              class="rounded-lg w-full h-auto max-w-[800px]">
-        </div>
-      </div>
+  <!-- Screenshot -->
+<div class="mt-10 flex justify-center">
+  <img src="results_page.JPG"
+       alt="NBA Sentiment Analysis Screenshot"
+       style="height: 450px; width: auto;"
+       class="rounded-lg shadow-lg object-cover cursor-pointer transition-transform duration-200 hover:scale-105"
+       onclick="openModal()">
+</div>
 
 
-
-        <!-- GitHub Link -->
-        <div class="mt-3 text-center">
-          <a href="https://github.com/SakibKhan1/reddit-sentiment-tracker"
-             target="_blank"
-             class="text-teal underline text-lg hover:text-teal-300">
-            Link to project
-          </a>
-        </div>
-      </div>
-
-      <!-- Project 2 -->
-      <div class="bg-dark-blue-light p-6 rounded-lg shadow-lg">
-        <h3 class="text-2xl font-semibold text-light-gray mb-2">Project 2</h3>
-        <p class="text-gray-300">Description placeholder.</p>
-      </div>
-
+  <!-- Modal -->
+  <div id="imageModal"
+       class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 hidden">
+    <div class="relative bg-dark-blue-light p-3 rounded-lg shadow-lg max-w-[70vw] max-h-[70vh] overflow-auto">
+      <button onclick="closeModal()"
+              class="absolute top-2 right-3 text-white text-3xl font-bold hover:text-gray-300">
+        &times;
+      </button>
+      <img src="results_page.JPG"
+           alt="Full Size Screenshot"
+           class="rounded-lg w-full h-auto max-w-[800px]">
     </div>
   </div>
-</section>
 
+  <!-- GitHub Link pinned bottom-right -->
+  <div class="absolute bottom-6 right-6">
+    <a href="https://github.com/SakibKhan1/reddit-sentiment-tracker"
+       target="_blank"
+       class="text-teal border border-teal px-4 py-2 rounded hover:bg-teal hover:text-dark-blue transition-colors duration-200">
+      Link to project
+    </a>
+  </div>
+</div>
+
+
+<!-- Project 2 -->
+<div class="bg-dark-blue-light p-6 rounded-lg shadow-lg relative min-h-[700px]">
+  <h3 class="text-xl font-semibold text-light-gray mb-2 text-center">LeetCode Organizer iOS App</h3>
+  <ul class="text-gray-300 text-sm list-disc pl-6 space-y-1 text-left">
+    <li>Built a native iOS application in <span class="text-yellow">SwiftUI</span> for organizing and tracking LeetCode problems by topic, completion status, and custom solutions.</li>
+    <li>Utilized <span class="text-yellow">MVVM architecture</span> and <span class="text-yellow">UserDefaults</span> for persistent state management of problem sets, streak tracking, and user input.</li>
+    <li>Integrated dynamic UI components including <span class="text-yellow">search filtering</span>, <span class="text-yellow">tag-based classification</span>, and <span class="text-yellow">image upload via <code class="text-yellow">UIImagePickerController</code></span>.</li>
+    <li>Engineered a modular design with <span class="text-yellow">custom SwiftUI views</span>, including progress visualizations and editable solution entries with time/space complexity annotations.</li>
+  </ul>
+
+  <div class="mt-4 ml-48">
+    <img src="Media/iosDemo.gif"
+         alt="iOS App Demo"
+         style="width: 250px; height: auto;"
+         class="rounded-lg shadow-lg object-contain cursor-pointer transition-transform duration-200 hover:scale-105">
+  </div>
+
+  <!-- GitHub Link pinned bottom-right -->
+  <div class="absolute bottom-6 right-6">
+    <a href="https://github.com/SakibKhan1/leetcode-organizer-ios-app"
+       target="_blank"
+       class="text-teal border border-teal px-4 py-2 rounded hover:bg-teal hover:text-dark-blue transition-colors duration-200">
+      Link to project
+    </a>
+  </div>
+</div>
+    </div> 
+  </div> 
+</section> 
     <!-- Contact Section -->
     <section id="contact" class="scroll-mt-28 py-20 bg-dark-blue text-center">
       <div class="container mx-auto">

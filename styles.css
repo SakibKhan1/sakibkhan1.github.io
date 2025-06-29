@@ -111,3 +111,7 @@
 html {
   scroll-behavior: smooth;
 }
+
+.text-yellow {
+  color: #facc15; 
+}
