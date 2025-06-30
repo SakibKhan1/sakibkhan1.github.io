@@ -1,4 +1,4 @@
-// Always start at top when refreshing
+// always start at top when refreshing
 if ('scrollRestoration' in history) {
   history.scrollRestoration = 'manual';
 }
@@ -6,14 +6,15 @@ window.addEventListener('load', () => {
   window.scrollTo(0, 0);
 });
 
-// --- Work Experience Data ---
+// --- Work Experience ---
 const experienceContent = {
   persado: {
     title: `Software Engineer Intern @ <a href="https://www.linkedin.com/company/persado/posts/?feedView=all" target="_blank" rel="noopener noreferrer" class="text-teal underline">Persado</a>`,
     bullets: [
       "Implemented Kubernetes in EKS (Amazon Elastic Kubernetes Service) and AKS (Azure Kubernetes Service) to manage the scaling, deployment, and maintenance of applications.",
-      "Developed cloud-native applications using Java, utilizing Agile Methodologies, and maintaining source control with Git.",
-      "Created application wireframes using Figma, enabling rapid prototyping and ensuring alignment with business requirements."
+      "Developed cloud-native Java microservices within an Agile team, following Git-based workflows and code reviews.",
+      "Configured CI/CD pipelines using GitHub Actions to automate deployments to EKS clusters, reducing manual overhead.",
+      "Designed interactive wireframes in Figma to bridge engineering solutions with evolving product requirements."
     ]
   },
   codepath: {
