@@ -31,6 +31,7 @@ A SwiftUI-based iOS app to track LeetCode problem-solving progress. Includes cus
 A Chrome extension built with JavaScript and React to enhance bookmarking by adding tag-based metadata on save. Features include real-time search, editing, and visual highlight effects.
 
 → [View on GitHub](https://github.com/SakibKhan1/reddit-sentiment-tracker)
+
 ---
 
 ## Getting Started (For Developers)
