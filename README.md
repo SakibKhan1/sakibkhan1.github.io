@@ -25,12 +25,12 @@ A Flask web app that uses the Reddit API to analyze sentiment for any keyword ac
 ### LeetCode Organizer iOS App
 A SwiftUI-based iOS app to track LeetCode problem-solving progress. Includes custom solutions, problem tagging, progress streaks, and image uploads.
 
-→ [View on GitHub](https://github.com/SakibKhan1/reddit-sentiment-tracker)
+→ [View on GitHub](https://github.com/SakibKhan1/leetcode-organizer-ios-app)
 
 ### LinkNest – Bookmark Manager Extension
 A Chrome extension built with JavaScript and React to enhance bookmarking by adding tag-based metadata on save. Features include real-time search, editing, and visual highlight effects.
 
-→ [View on GitHub](https://github.com/SakibKhan1/reddit-sentiment-tracker)
+→ [View on GitHub](https://github.com/SakibKhan1/linknest-bookmark-chrome-extension)
 
 ---
 
