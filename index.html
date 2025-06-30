@@ -11,7 +11,7 @@
       scroll-behavior: smooth;
     }
 
-    /* Full column highlight for nav item */
+    /* full column highlight for nav item */
     .nav-item {
       position: relative;
       display: flex;      
@@ -70,14 +70,18 @@
     <div class="container mx-auto flex justify-between items-center h-full">
       <nav class="hidden md:flex flex-grow justify-center h-full">
         <ul class="flex text-xl space-x-12 h-full">
-          <li class="nav-item h-full"><a href="#" class="nav-link ...">About</a>
+          <li class="nav-item h-full"><a href="#" class="nav-link hover:text-teal">About</a></li>
           <li class="nav-item h-full"><a href="#experience" class="nav-link hover:text-teal">Experience</a></li>
           <li class="nav-item h-full"><a href="#skills" class="nav-link hover:text-teal">Skills</a></li>
           <li class="nav-item h-full"><a href="#projects" class="nav-link hover:text-teal">Projects</a></li>
           <li class="nav-item h-full"><a href="#contact" class="nav-link hover:text-teal">Contact</a></li>
         </ul>
       </nav>
-      <a href="Sakib_Khan_Resume.pdf" class="border border-teal text-teal px-4 py-2 rounded hover:bg-teal hover:text-dark-blue">Resume</a>
+  <a href="Sakib_Khan_Resume.pdf" target="_blank" rel="noopener noreferrer"
+    class="border border-teal text-teal px-4 py-2 rounded hover:bg-teal hover:text-dark-blue flex items-center gap-2">
+    Resume
+    <img src="icons/pdf-icon.png" alt="PDF icon" class="w-4 h-4">
+  </a>
     </div>
   </header>
   <!-- Hero Section -->
@@ -367,23 +371,23 @@
 <script>
   // Immediately prevent anchor scrolling
   if (window.location.hash) {
-    // Disable scroll temporarily
+    // Disable scroll temporarily so the page can load my gif for proj 2 
     document.documentElement.style.scrollBehavior = 'auto';
     window.scrollTo(0, 0);
   }
 
   window.addEventListener('load', () => {
     if (window.location.hash) {
-      // Remove hash without refreshing
+      // remove hash without refreshing
       history.replaceState(null, null, ' ');
     }
 
-    // Re-enable smooth scroll
+    // smooth scroll
     document.documentElement.style.scrollBehavior = 'smooth';
   });
 </script>
 
-<!-- 🔽 New script for Project 3 modal -->
+<!-- script for Proj 3 Modal -->
 <script>
   function openExtensionModal() {
     document.getElementById('extensionModal').classList.remove('hidden');
