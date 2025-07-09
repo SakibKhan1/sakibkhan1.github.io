@@ -115,3 +115,19 @@ html {
 .text-yellow {
   color: #facc15; 
 }
+
+.project-button {
+  background-color: #3b82f6; /* Solid blue (Tailwind's blue-500) */
+  color: black;              /* Black text */
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.2s ease;
+}
+
+.project-button:hover {
+  background-color: #2563eb; /* Slightly darker blue on hover */
+}

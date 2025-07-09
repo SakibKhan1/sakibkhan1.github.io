@@ -193,6 +193,8 @@
             <div class="flex flex-col items-center"><img src="icons/swiftui.png" alt="SwiftUI" class="w-12 h-12 mb-1 hover:scale-110 transition-transform duration-300"><span class="text-black text-base font-semibold">SwiftUI</span></div>
             <div class="flex flex-col items-center"><img src="icons/xcode.png" alt="Xcode" class="w-12 h-12 mb-1 hover:scale-110 transition-transform duration-300"><span class="text-black text-base font-semibold">Xcode</span></div>
             <div class="flex flex-col items-center"><img src="icons/chromeAPI.png" alt="Chrome Extensions API" class="w-12 h-12 mb-1 hover:scale-110 transition-transform duration-300"><span class="text-black text-base font-semibold">Chrome Extensions API</span></div>
+            <div class="flex flex-col items-center"><img src="icons/vercel.png" alt="Vercel" class="w-12 h-12 mb-1 hover:scale-110 transition-transform duration-300"><span class="text-black text-base font-semibold">Vercel</span></div>
+            <div class="flex flex-col items-center"><img src="icons/openai.png" alt="OpenAI API" class="w-12 h-12 mb-1 hover:scale-110 transition-transform duration-300"><span class="text-black text-base font-semibold">OpenAI API</span></div>
           </div>
         </div>
 
@@ -206,79 +208,111 @@
     <!-- Grid for projects -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-      <!-- Project 1 -->
-      <div class="bg-dark-blue-light p-6 rounded-lg shadow-lg relative min-h-[700px]">
-        <h3 class="text-xl font-semibold text-light-gray mb-2 text-center">NBA Reddit Sentiment Analyzer</h3>
-        <ul class="text-gray-300 text-sm list-disc pl-6 space-y-1 text-left">
-          <li>Built a <span class="text-yellow">Flask</span> web application that performs sentiment analysis on Reddit posts based on user-specified keywords and subreddit input.</li>
-          <li>Integrated <span class="text-yellow">Reddit API (PRAW)</span> to fetch live data and analyzed post content using custom positive/negative word dictionaries tailored for community slang.</li>
-          <li>Visualized sentiment trends through dynamically generated <span class="text-yellow">Matplotlib</span> bar charts embedded into <span class="text-yellow">interactive HTML templates</span>.</li>
-          <li>Designed the app to be fully customizable, allowing analysis across any subreddit by modifying parameters with minimal code changes.</li>
-        </ul>
+<!-- Project 1 -->
+<div class="bg-dark-blue-light p-6 rounded-lg shadow-lg relative min-h-[700px]">
+  <h3 class="text-xl font-semibold text-light-gray mb-2 text-center">PDF AI Study Generator</h3>
+  <ul class="text-gray-300 text-sm list-disc pl-6 space-y-1 text-left">
+    <li>Built a full-stack AI web app using <span class="text-yellow">React</span>, <span class="text-yellow">Flask</span>, and <span class="text-yellow">GPT-3.5</span> to convert uploaded PDF documents into structured summaries, flashcards, and quizzes</li>
+    <li>Integrated <span class="text-yellow">PyMuPDF</span> for server-side PDF parsing and implemented <span class="text-yellow">SHA256-based caching</span> to avoid redundant GPT requests and reduce API costs</li>
+    <li>Designed fallback logic to <span class="text-yellow">extract partial JSON</span> when GPT outputs malformed responses, ensuring reliable UI rendering and minimal user disruption</li>
+    <li>Deployed the frontend on <span class="text-yellow">Vercel</span> and backend on <span class="text-yellow">Render</span>, enabling a scalable and publicly accessible AI-powered study assistant</li>
+  </ul>
 
-        <!-- Screenshot -->
-        <div class="mt-10 flex justify-center">
-          <img src="results_page.JPG"
-               alt="NBA Sentiment Analysis Screenshot"
-               style="height: 450px; width: auto;"
-               class="rounded-lg shadow-lg object-cover cursor-pointer transition-transform duration-200 hover:scale-105"
-               onclick="openModal()">
-        </div>
+  <!-- GIF Placeholder -->
+<div class="mt-3 flex justify-center">
+  <img src="Media/aipdfDemo.gif"
+       alt="PDF AI Study Generator Demo"
+       class="rounded-lg shadow-lg cursor-pointer transition-transform duration-200 hover:scale-105"
+       style="max-width: 100%; height: 450px; image-rendering: auto;"
+       onclick="openGifModal()">
+</div>
 
-        <!-- Modal -->
-        <div id="imageModal"
-             class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 hidden">
-          <div class="relative bg-dark-blue-light p-3 rounded-lg shadow-lg max-w-[70vw] max-h-[70vh] overflow-auto">
-            <button onclick="closeModal()"
-                    class="absolute top-2 right-3 text-white text-3xl font-bold hover:text-gray-300">
-              &times;
-            </button>
-            <img src="results_page.JPG"
-                 alt="Full Size Screenshot"
-                 class="rounded-lg w-full h-auto max-w-[800px]">
-          </div>
-        </div>
+<!-- Modal for enlarged GIF -->
+<div id="gifModal"
+     onclick="closeGifModal()"
+     class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 hidden cursor-pointer">
 
-        <!-- GitHub Link -->
-        <div class="absolute bottom-6 right-6">
-          <a href="https://github.com/SakibKhan1/reddit-sentiment-tracker"
-             target="_blank"
-             class="text-teal border border-teal px-4 py-2 rounded hover:bg-teal hover:text-dark-blue transition-colors duration-200">
-            Link to project
-          </a>
-        </div>
-      </div>
 
-      <!-- Project 2 -->
-      <div class="bg-dark-blue-light p-6 rounded-lg shadow-lg relative min-h-[700px]">
-        <h3 class="text-xl font-semibold text-light-gray mb-2 text-center">LeetCode Organizer iOS App</h3>
-        <ul class="text-gray-300 text-sm list-disc pl-6 space-y-1 text-left">
-          <li>Built a native iOS application in <span class="text-yellow">SwiftUI</span> for organizing and tracking LeetCode problems by topic, completion status, and custom solutions.</li>
-          <li>Utilized <span class="text-yellow">MVVM architecture</span> and <span class="text-yellow">UserDefaults</span> for persistent state management of problem sets, streak tracking, and user input.</li>
-          <li>Integrated dynamic UI components including <span class="text-yellow">search filtering</span>, <span class="text-yellow">tag-based classification</span>, and <span class="text-yellow">image upload via <code class="text-yellow">UIImagePickerController</code></span>.</li>
-          <li>Engineered a modular design with <span class="text-yellow">custom SwiftUI views</span>, including progress visualizations and editable solution entries with time/space complexity annotations.</li>
-        </ul>
+<div class="modal-content bg-dark-blue-light p-4 rounded-lg shadow-lg max-w-[90vw] max-h-[90vh] overflow-auto cursor-pointer">
 
-        <!-- GIF -->
-        <div class="mt-4 ml-48">
-          <img src="Media/iosDemo.gif"
-               alt="iOS App Demo"
-               style="width: 250px; height: auto;"
-               class="rounded-lg shadow-lg object-contain cursor-pointer transition-transform duration-200 hover:scale-105">
-        </div>
 
-        <!-- GitHub Link -->
-        <div class="absolute bottom-6 right-6">
-          <a href="https://github.com/SakibKhan1/leetcode-organizer-ios-app"
-             target="_blank"
-             class="text-teal border border-teal px-4 py-2 rounded hover:bg-teal hover:text-dark-blue transition-colors duration-200">
-            Link to project
-          </a>
-        </div>
-      </div>
-      
+       class="bg-dark-blue-light p-4 rounded-lg shadow-lg max-w-[90vw] max-h-[90vh] overflow-auto">
+    <img src="Media/aipdfDemo.gif"
+         alt="Full Size GIF"
+         class="rounded-lg w-full h-auto max-w-[800px]">
+  </div>
+</div>
 
-      <!-- Project 3 -->
+  <!-- GitHub Link -->
+  <div class="absolute bottom-3 right-6">
+    <a href="https://github.com/SakibKhan1/pdf-ai-study-generator" target="_blank" class="project-button">
+      Link to project
+    </a>
+  </div>
+</div>
+
+<!-- Project 2 -->
+<div class="bg-dark-blue-light p-6 rounded-lg shadow-lg relative min-h-[700px]">
+  <h3 class="text-xl font-semibold text-light-gray mb-2 text-center">LeetCode Organizer iOS App</h3>
+  <ul class="text-gray-300 text-sm list-disc pl-6 space-y-1 text-left">
+    <li>Built a native iOS application in <span class="text-yellow">SwiftUI</span> for organizing and tracking LeetCode problems by topic, completion status, and custom solutions. <span class="text-yellow">Published to the App Store</span> for public use and user feedback.</li>
+    <li>Utilized <span class="text-yellow">MVVM architecture</span> and <span class="text-yellow">UserDefaults</span> for persistent state management of problem sets, streak tracking, and user input.</li>
+    <li>Integrated dynamic UI components including <span class="text-yellow">search filtering</span>, <span class="text-yellow">tag-based classification</span>, and <span class="text-yellow">image upload via <code class="text-yellow">UIImagePickerController</code></span>.</li>
+    <li>Engineered a modular design with <span class="text-yellow">custom SwiftUI views</span>, including progress visualizations and editable solution entries with time/space complexity annotations.</li>
+  </ul>
+
+<!-- Project 2 GIF -->
+<div class="mt-3 flex justify-center">
+  <img src="Media/iosDemo.gif"
+       alt="iOS App Demo"
+       class="rounded-lg shadow-lg cursor-pointer transition-transform duration-200 hover:scale-105"
+       style="max-width: 100%; height: 500px;"
+       onclick="openGifModal2()">
+</div>
+
+<!-- Project 2 Modal -->
+<div id="gifModal2"
+     class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 hidden cursor-pointer">
+  <div class="modal-content bg-dark-blue-light p-4 rounded-lg shadow-lg max-w-[90vw] max-h-[90vh] overflow-auto cursor-pointer">
+<img src="Media/iosDemo.gif"
+     alt="Full Size iOS App Demo"
+     class="rounded-lg max-w-full max-h-screen w-auto h-auto">
+  </div>
+</div>
+
+<script>
+  function openGifModal2() {
+    document.getElementById('gifModal2').classList.remove('hidden');
+  }
+
+  function closeGifModal2() {
+    document.getElementById('gifModal2').classList.add('hidden');
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const gifModal2 = document.getElementById('gifModal2');
+    const modalContent2 = gifModal2.querySelector('.modal-content');
+
+    gifModal2.addEventListener('click', function (e) {
+      if (!modalContent2.contains(e.target)) {
+        closeGifModal2();
+      }
+    });
+  });
+</script>
+
+
+  <!-- GitHub Link -->
+  <div class="absolute bottom-3 right-6">
+    <a href="https://github.com/SakibKhan1/leetcode-organizer-ios-app"
+       target="_blank"
+       class="project-button">
+      Link to project
+    </a>
+  </div>
+</div>
+
+<!-- Project 3 -->
 <div class="w-full flex">
   <div class="bg-dark-blue-light p-6 rounded-lg shadow-lg relative min-h-[700px] w-full md:w-[60%] lg:w-[50%] ml-auto mr-0">
     <h3 class="text-xl font-semibold text-light-gray mb-2 text-center">LinkNest - Bookmark Manager Extension</h3>
@@ -289,40 +323,86 @@
       <li>Packaged and deployed for use in <span class="text-yellow">Chrome Web Store</span>, designed with responsive UI and styled using <span class="text-yellow">TailwindCSS</span>.</li>
     </ul>
 
-<!-- Project 3 Modal -->
-<div id="extensionModal"
-     class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 hidden">
-  <div class="relative bg-dark-blue-light p-4 rounded-lg shadow-lg w-[98vw] h-[95vh] overflow-auto">
-    <button onclick="closeExtensionModal()"
-            class="absolute top-2 right-3 text-white text-3xl font-bold hover:text-gray-300">
-      &times;
-    </button>
-    <img src="Media/extensionPic.JPG"
-         alt="Chrome Extension Screenshot"
-         class="rounded-lg shadow-lg object-contain ring-1 ring-black w-full h-full">
-  </div>
-</div>
-<!-- Screenshot  -->
-<div class="mt-4 flex justify-start">
-  <img src="Media/extensionPic.JPG"
-       alt="Chrome Extension Screenshot"
-       style="height: 450px; width: auto;"
-       class="rounded-lg shadow-lg object-cover cursor-pointer transition-transform duration-200 hover:scale-105 ring-1 ring-black"
-       onclick="openExtensionModal()">
-</div>
+    <!-- Project 3 Modal -->
+    <div id="extensionModal"
+         class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 hidden">
+      <div class="relative bg-dark-blue-light p-4 rounded-lg shadow-lg w-[98vw] h-[95vh] overflow-auto">
+        <button onclick="closeExtensionModal()"
+                class="absolute top-2 right-3 text-white text-3xl font-bold hover:text-gray-300">
+          &times;
+        </button>
+        <img src="Media/extensionPic.JPG"
+             alt="Chrome Extension Screenshot"
+             class="rounded-lg shadow-lg object-contain ring-1 ring-black w-full h-full">
+      </div>
+    </div>
 
+    <!-- Screenshot -->
+    <div class="mt-4 flex justify-center">
+      <img src="Media/extensionPic.JPG"
+           alt="Chrome Extension Screenshot"
+           style="height: 450px; width: 650px;"
+           class="rounded-lg shadow-lg object-cover cursor-pointer transition-transform duration-200 hover:scale-105 ring-1 ring-black"
+           onclick="openExtensionModal()">
+    </div>
 
     <!-- GitHub Link -->
-    <div class="absolute bottom-6 right-6">
+    <div class="absolute bottom-3 right-6">
       <a href="https://github.com/SakibKhan1/linknest-bookmark-chrome-extension"
          target="_blank"
-         class="text-teal border border-teal px-4 py-2 rounded hover:bg-teal hover:text-dark-blue transition-colors duration-200">
+         class="project-button">
         Link to project
       </a>
     </div>
   </div>
 </div>
+
+<!-- Project 4 -->
+<div class="bg-dark-blue-light p-6 rounded-lg shadow-lg relative min-h-[700px]">
+  <h3 class="text-xl font-semibold text-light-gray mb-2 text-center">NBA Reddit Sentiment Analyzer</h3>
+  <ul class="text-gray-300 text-sm list-disc pl-6 space-y-1 text-left">
+    <li>Built a <span class="text-yellow">Flask</span> web application that performs sentiment analysis on Reddit posts based on user-specified keywords and subreddit input.</li>
+    <li>Integrated <span class="text-yellow">Reddit API (PRAW)</span> to fetch live data and analyzed post content using custom positive/negative word dictionaries tailored for community slang.</li>
+    <li>Visualized sentiment trends through dynamically generated <span class="text-yellow">Matplotlib</span> bar charts embedded into <span class="text-yellow">interactive HTML templates</span>.</li>
+    <li>Designed the app to be fully customizable, allowing analysis across any subreddit by modifying parameters with minimal code changes.</li>
+  </ul>
+
+  <!-- Screenshot -->
+  <div class="mt-6 flex justify-center">
+<img src="results_page.JPG"
+     alt="NBA Sentiment Analysis Screenshot"
+     class="rounded-lg shadow-lg object-cover cursor-pointer transition-transform duration-200 hover:scale-105 mb-10"
+     style="height: 450px; width: auto;"
+     onclick="openModal()">
+  </div>
+
+  <!-- Modal -->
+  <div id="imageModal"
+       class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 hidden">
+    <div class="relative bg-dark-blue-light p-3 rounded-lg shadow-lg max-w-[70vw] max-h-[70vh] overflow-auto">
+      <button onclick="closeModal()"
+              class="absolute top-2 right-3 text-white text-3xl font-bold hover:text-gray-300">
+        &times;
+      </button>
+      <img src="results_page.JPG"
+           alt="Full Size Screenshot"
+           class="rounded-lg w-full h-auto max-w-[800px]">
+    </div>
+  </div>
+
+  <!-- GitHub Link -->
+  <div class="absolute bottom-3 right-6">
+    <a href="https://github.com/SakibKhan1/reddit-sentiment-tracker"
+       target="_blank"
+       class="project-button mt-2">
+      Link to project
+    </a>
+  </div>
+</div>
+
 </section>
+
+
 
     <!-- Contact Section -->
     <section id="contact" class="scroll-mt-28 py-20 bg-dark-blue text-center">
@@ -403,6 +483,54 @@
       closeExtensionModal();
     }
   });
+
+
 </script>
+
+<script>
+  function openGifModal() {
+    document.getElementById('gifModal').classList.remove('hidden');
+  }
+
+  function closeGifModal() {
+    document.getElementById('gifModal').classList.add('hidden');
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const gifModal = document.getElementById('gifModal');
+    const modalContent = gifModal.querySelector('.modal-content');
+
+    // Close when clicking the dark background
+    gifModal.addEventListener('click', function (e) {
+      if (!modalContent.contains(e.target)) {
+        closeGifModal();
+      }
+    });
+  });
+</script>
+
+<script>
+  function openGifModal2() {
+    document.getElementById('gifModal2').classList.remove('hidden');
+  }
+
+  function closeGifModal2() {
+    document.getElementById('gifModal2').classList.add('hidden');
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const gifModal2 = document.getElementById('gifModal2');
+    const modalContent2 = gifModal2.querySelector('.modal-content');
+
+    gifModal2.addEventListener('click', function (e) {
+      if (!modalContent2.contains(e.target)) {
+        closeGifModal2();
+      }
+    });
+  });
+</script>
+
+
+
 </body>
 </html>
