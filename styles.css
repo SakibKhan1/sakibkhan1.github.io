@@ -131,3 +131,61 @@ html {
 .project-button:hover {
   background-color: #2563eb; /* Slightly darker blue on hover */
 }
+
+.profile-container {
+  position: relative;
+  width: 384px;
+  height: 384px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.static-profile-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  position: relative;
+  z-index: 2;
+  border: 3px solid #0ea5e9;
+  box-shadow: 0 0 10px rgba(14, 165, 233, 0.2);
+}
+
+.animated-bg {
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  transform-origin: center;
+  animation: slow-rotate 20s linear infinite;
+  opacity: 0.2;  /* Increased from 0.08 */
+  z-index: 1;
+}
+
+@keyframes slow-rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes glowPulse {
+  0% {
+    stroke: #0ea5e9;
+    filter: drop-shadow(0 0 0px #0ea5e9);
+    opacity: 0.25;
+  }
+  50% {
+    stroke: #3b82f6;
+    filter: drop-shadow(0 0 8px #3b82f6);
+    opacity: 0.6;
+  }
+  100% {
+    stroke: #0ea5e9;
+    filter: drop-shadow(0 0 0px #0ea5e9);
+    opacity: 0.25;
+  }
+}
+
+.glow-pulse {
+  animation: glowPulse 2s ease-in-out infinite;
+}
