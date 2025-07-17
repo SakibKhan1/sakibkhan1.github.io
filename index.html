@@ -321,6 +321,49 @@
 </div>
 
 <!-- Project 3 -->
+<div class="bg-dark-blue-light p-6 rounded-lg shadow-lg relative min-h-[700px]">
+  <h3 class="text-xl font-semibold text-light-gray mb-2 text-center">Journal.ly – AI-Powered Journal App</h3>
+  <ul class="text-gray-300 text-sm list-disc pl-6 space-y-1 text-left">
+    <li>Created an iOS journaling app using <span class="text-yellow">SwiftUI</span> and <span class="text-yellow">GPT-3.5</span> to generate reflective feedback, emotional analysis, and daily summaries from user entries</li>
+    <li>Implemented <span class="text-yellow">daily GPT usage limits</span>, chat history saving, and emoji customization using <span class="text-yellow">@AppStorage</span> and modular ViewModels</li>
+    <li>Added features like <span class="text-yellow">starter prompts</span>, editable AI replies, and a multi-tab navigation system to improve user experience</li>
+    <li>Designed a polished, minimal UI with <span class="text-yellow">popup-based journal clearing</span> and adjustable avatars to enhance personalization and control</li>
+  </ul>
+
+  <!-- Screenshot -->
+  <div class="mt-4 flex justify-center">
+    <img src="Media/journalyscreenshot.jpg"
+         alt="AI Journal App Screenshot"
+         class="rounded-lg shadow-lg object-contain cursor-pointer transition-transform duration-200 hover:scale-105"
+         style="height: 500px; width: auto;"
+         onclick="openJournalModal()">
+  </div>
+
+  <!-- Modal -->
+  <div id="journalModal"
+       class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 hidden">
+    <div class="relative bg-dark-blue-light p-4 rounded-lg shadow-lg max-w-[90vw] max-h-[90vh] overflow-auto">
+      <button onclick="closeJournalModal()"
+              class="absolute top-2 right-3 text-white text-3xl font-bold hover:text-gray-300">
+        &times;
+      </button>
+      <img src="Media/journalyscreenshot.jpg"
+           alt="Full Size Journal Screenshot"
+           class="rounded-lg w-full h-auto max-w-[800px]">
+    </div>
+  </div>
+
+  <!-- GitHub Link -->
+  <div class="absolute bottom-5 right-6">
+    <a href="https://github.com/SakibKhan1/ai-journal-app"
+       target="_blank"
+       class="bg-blue-500 text-black font-semibold py-2 px-4 rounded hover:bg-blue-600 transition">
+      Link to project
+    </a>
+  </div>
+</div>
+
+<!-- Project 4 -->
 <div class="w-full flex">
   <div class="bg-dark-blue-light p-6 rounded-lg shadow-lg relative min-h-[700px] w-full md:w-[60%] lg:w-[50%] ml-auto mr-0">
     <h3 class="text-xl font-semibold text-light-gray mb-2 text-center">LinkNest - Bookmark Manager Extension</h3>
@@ -331,7 +374,7 @@
       <li>Packaged and deployed for use in <span class="text-yellow">Chrome Web Store</span>, designed with responsive UI and styled using <span class="text-yellow">TailwindCSS</span>.</li>
     </ul>
 
-    <!-- Project 3 Modal -->
+    <!-- Project 4 Modal -->
     <div id="extensionModal"
          class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 hidden">
       <div class="relative bg-dark-blue-light p-4 rounded-lg shadow-lg w-[98vw] h-[95vh] overflow-auto">
@@ -355,18 +398,18 @@
     </div>
 
     <!-- GitHub Link -->
-<div class="absolute bottom-5 right-6">
-  <a href="https://github.com/SakibKhan1/linknest-bookmark-chrome-extension"
-     target="_blank"
-     class="bg-blue-500 text-black font-semibold py-2 px-4 rounded hover:bg-blue-600 transition">
-    Link to project
-  </a>
-</div>
-
+    <div class="absolute bottom-5 right-6">
+      <a href="https://github.com/SakibKhan1/linknest-bookmark-chrome-extension"
+         target="_blank"
+         class="bg-blue-500 text-black font-semibold py-2 px-4 rounded hover:bg-blue-600 transition">
+        Link to project
+      </a>
+    </div>
   </div>
 </div>
 
-<!-- Project 4 -->
+
+<!-- Project 5 -->
 <div class="bg-dark-blue-light p-6 rounded-lg shadow-lg relative min-h-[700px]">
   <h3 class="text-xl font-semibold text-light-gray mb-2 text-center">NBA Reddit Sentiment Analyzer</h3>
   <ul class="text-gray-300 text-sm list-disc pl-6 space-y-1 text-left">
@@ -378,11 +421,11 @@
 
   <!-- Screenshot -->
   <div class="mt-6 flex justify-center">
-<img src="results_page.JPG"
-     alt="NBA Sentiment Analysis Screenshot"
-     class="rounded-lg shadow-lg object-cover cursor-pointer transition-transform duration-200 hover:scale-105 mb-10"
-     style="height: 450px; width: auto;"
-     onclick="openModal()">
+    <img src="results_page.JPG"
+         alt="NBA Sentiment Analysis Screenshot"
+         class="rounded-lg shadow-lg object-cover cursor-pointer transition-transform duration-200 hover:scale-105 mb-10"
+         style="height: 450px; width: auto;"
+         onclick="openModal()">
   </div>
 
   <!-- Modal -->
@@ -400,14 +443,15 @@
   </div>
 
   <!-- GitHub Link -->
-<div class="absolute bottom-5 right-6">
-  <a href="https://github.com/SakibKhan1/reddit-sentiment-tracker"
-     target="_blank"
-     class="bg-blue-500 text-black font-semibold py-2 px-4 rounded hover:bg-blue-600 transition">
-    Link to project
-  </a>
+  <div class="absolute bottom-5 right-6">
+    <a href="https://github.com/SakibKhan1/reddit-sentiment-tracker"
+       target="_blank"
+       class="bg-blue-500 text-black font-semibold py-2 px-4 rounded hover:bg-blue-600 transition">
+      Link to project
+    </a>
+  </div>
 </div>
-</div>
+
 
 </section>
 
@@ -539,6 +583,22 @@
   });
 </script>
 
+<script>
+  function openJournalModal() {
+    document.getElementById('journalModal').classList.remove('hidden');
+  }
+
+  function closeJournalModal() {
+    document.getElementById('journalModal').classList.add('hidden');
+  }
+
+  document.addEventListener('click', function (e) {
+    const modal = document.getElementById('journalModal');
+    if (e.target === modal) {
+      closeJournalModal();
+    }
+  });
+</script>
 
 
 </body>
