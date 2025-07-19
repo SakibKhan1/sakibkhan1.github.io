@@ -6,7 +6,8 @@ const experienceContent = {
       "Implemented Kubernetes in EKS (Amazon Elastic Kubernetes Service) and AKS (Azure Kubernetes Service) to manage the scaling, deployment, and maintenance of applications.",
       "Developed cloud-native Java microservices within an Agile team, following Git-based workflows and code reviews.",
       "Accelerated development cycles by streamlining CI/CD workflows, reducing build and deployment times by ~30%, and enabling the team to release updates more efficiently within Agile sprints",
-      "Designed interactive wireframes in Figma to bridge engineering solutions with evolving product requirements."
+      "Designed interactive wireframes in Figma to bridge engineering solutions with evolving product requirements.", 
+      "Contributed to Agile sprint planning and Git-based code reviews to ensure smooth backend integration across teams"
     ]
   },
   codepath: {
