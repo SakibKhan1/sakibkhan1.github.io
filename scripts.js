@@ -5,7 +5,7 @@ const experienceContent = {
     bullets: [
       "Implemented Kubernetes in EKS (Amazon Elastic Kubernetes Service) and AKS (Azure Kubernetes Service) to manage the scaling, deployment, and maintenance of applications.",
       "Developed cloud-native Java microservices within an Agile team, following Git-based workflows and code reviews.",
-      "Configured CI/CD pipelines using GitHub Actions to automate deployments to EKS clusters, reducing manual overhead.",
+      "Accelerated development cycles by streamlining CI/CD workflows, reducing build and deployment times by ~30%, and enabling the team to release updates more efficiently within Agile sprints",
       "Designed interactive wireframes in Figma to bridge engineering solutions with evolving product requirements."
     ]
   },
@@ -13,7 +13,7 @@ const experienceContent = {
     title: `Tech Fellow @ <a href="https://www.linkedin.com/school/codepath-org/" target="_blank" rel="noopener noreferrer" class="text-teal underline">CodePath</a>`,
     bullets: [
       "Helped lead interactive sessions focused on Python programming language, adapting teaching methodologies to cater to diverse learning styles.",
-      "Facilitated dynamic breakout sessions for collaborative programming assignments in data structures and algorithms, enhancing teamwork and increasing student engagement by 30% through peer-driven learning.",
+      "Facilitated dynamic breakout sessions for collaborative programming assignments in data structures and algorithms, enhancing teamwork and increasing student engagement by 25% through peer-driven learning.",
       "Delivered personalized coaching by simulating programming interviews, equipping students with real-world problem-solving skills through targeted questioning techniques."
     ]
   }
