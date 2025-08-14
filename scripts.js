@@ -3,11 +3,11 @@ const experienceContent = {
   persado: {
     title: `Software Engineer Intern @ <a href="https://www.linkedin.com/company/persado/posts/?feedView=all" target="_blank" rel="noopener noreferrer" class="text-teal underline">Persado</a>`,
     bullets: [
-      "Implemented Kubernetes in EKS (Amazon Elastic Kubernetes Service) and AKS (Azure Kubernetes Service) to manage the scaling, deployment, and maintenance of applications.",
-      "Developed cloud-native Java microservices within an Agile team, following Git-based workflows and code reviews.",
-      "Accelerated development cycles by streamlining CI/CD workflows, reducing build and deployment times by ~30%, and enabling the team to release updates more efficiently within Agile sprints",
-      "Designed interactive wireframes in Figma to bridge engineering solutions with evolving product requirements.", 
-      "Contributed to Agile sprint planning and Git-based code reviews to ensure smooth backend integration across teams"
+      "Developed Java Spring Boot microservices powering NLP-based marketing automation, implementing new features and fixes that integrated with internal web tools and REST APIs.",
+      "Designed and documented RESTful API endpoints within the Spring Boot framework to deliver personalized content to enterprise dashboards.",
+      "Streamlined GitHub Actions CI/CD workflows, improving build reliability and reducing deployment times by ~20%.",
+      "Contributed to Agile sprints through sprint planning and Git-based code reviews to ensure smooth backend module integration.",
+      "Collaborated with backend and infrastructure engineers to test microservice reliability, performance, and secure deployments on Kubernetes-based environments."
     ]
   },
   codepath: {
