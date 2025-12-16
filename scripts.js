@@ -3,7 +3,7 @@ const experienceContent = {
   persado: {
     title: `Software Engineer Intern @ <a href="https://www.linkedin.com/company/persado/posts/?feedView=all" target="_blank" rel="noopener noreferrer" class="text-teal underline">Persado</a>`,
     bullets: [
-      "Developed Java Spring Boot microservices powering NLP-based marketing automation, implementing new features and fixes that integrated with internal web tools and REST APIs.",
+      "Developed Java Spring Boot microservices with a React.js dashboard (TypeScript + React) powering NLP-based marketing automation, implementing new features and fixes that integrated with internal web tools and REST APIs.",
       "Designed and documented RESTful API endpoints within the Spring Boot framework to deliver personalized content to enterprise dashboards.",
       "Streamlined GitHub Actions CI/CD workflows, improving build reliability and reducing deployment times by ~20%.",
       "Contributed to Agile sprints through sprint planning and Git-based code reviews to ensure smooth backend module integration.",
