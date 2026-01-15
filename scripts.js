@@ -7,7 +7,7 @@ const experienceContent = {
       "Designed and documented RESTful API endpoints within the Spring Boot framework to deliver personalized content to enterprise dashboards.",
       "Streamlined GitHub Actions CI/CD workflows, improving build reliability and reducing deployment times by ~20%.",
       "Contributed to Agile sprints through sprint planning and Git-based code reviews to ensure smooth backend module integration.",
-      "Collaborated with backend and infrastructure engineers to test microservice reliability, performance, and secure deployments on Kubernetes-based environments."
+      "Collaborated with backend and infrastructure engineers to test microservice reliability, performance, and secure deployments on Docker-based environments."
     ]
   },
   codepath: {
